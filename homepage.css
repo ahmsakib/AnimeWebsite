@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+}
+.side-navbar{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  top: 55px;
+  background-color: rgb(135, 86, 86);
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-insta-logo{
+  width: 25px;
+}
+.top-sidebar,
+.bottom-sidebar,
+.sidebar-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  height: 60px;
+}
+.top-sidebar{
+  margin-bottom: 70px;
+}
+.bottom-sidebar{
+  margin-top: 100px;
+}
