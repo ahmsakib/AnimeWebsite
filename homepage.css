@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  font-family: sans-serif;
 }
 .side-navbar{
   position: fixed;
@@ -7,7 +8,7 @@ body{
   bottom: 0px;
   top: 55px;
   background-color: rgb(135, 86, 86);
-  width: 72px;
+  width: 200px;
   z-index: 200;
   padding-top: 5px;
 }
@@ -19,15 +20,35 @@ body{
 .bottom-sidebar,
 .sidebar-icons{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   cursor: pointer;
   height: 60px;
+  padding-left: 50px;
+  transition: background-color 0.2s;
 }
 .top-sidebar{
   margin-bottom: 70px;
 }
 .bottom-sidebar{
   margin-top: 100px;
+  margin-left: 5px;
+}
+.icon-names,
+.icon-name-header{
+  margin-left: 10px;
+}
+.icon-container-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+.sidebar-icons:hover,
+.top-sidebar:hover,
+.bottom-sidebar:hover{
+  background-color: grey;
 }
