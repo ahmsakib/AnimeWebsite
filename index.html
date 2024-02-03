@@ -80,12 +80,12 @@
   </nav>
 <!--END OF SIDE-NAV-BAR-->
 <!--start OF stories-->
-    <div class="container">
+        <div class="container">
         <div class="stories">
-            <button class="Btn-left" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
-                    class="fas fa-chevron-left"></i></button>
-            <button class="Btn-right" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i
-                    class="fas fa-chevron-right"></i></button>
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i
+                    class="fa-solid fa-angle-right"></i></i></button>
 
 
             <div class="story-container">
@@ -105,7 +105,33 @@
         </div>
 
     </div>
+    <script src="https://kit.fontawesome.com/15a4a55cdf.js" crossorigin="anonymous"></script>
+    <script>
+        let currentScrollPosition = 0;
+        let scrollAmount = 320;
 
+        const sCont = document.querySelector(".story-container");
+        const hScroll = document.querySelector(".stories");
+
+        let maxscroll = sCont.offsetWidth + hScroll.offsetWidth;
+
+        function scrollHorizontally(val) {
+            currentScrollPosition += (val * scrollAmount);
+
+            if (currentScrollPosition > 0) {
+                currentScrollPosition = 0
+            }
+            if (currentScrollPosition > maxscroll) {
+                currentScrollPosition = maxscroll;
+            }
+
+            sCont.style.left = currentScrollPosition + "px";
+        }
+
+
+
+
+    </script>
 <!--end OF stories-->
 </body>
 </html>
