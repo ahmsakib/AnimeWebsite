@@ -80,6 +80,7 @@ body {
     position: relative;
     overflow: hidden;
 
+
 }
 
 .stories .btn-scroll {
@@ -102,7 +103,7 @@ body {
     align-items: center;
     position: absolute;
     left: 0;
-
+    transition: 0.5s all ease-out;
 }
 
 .story-img {
