@@ -67,7 +67,7 @@ body{
    /*container*/ 
   flex-grow: 1;
   /*Postion*/
-  postion: fixed;
+  position: fixed;
   top:0;
 }
 
@@ -78,7 +78,7 @@ body{
     border: 1px #ddd;
     border-radius: 5px;
     display: flex;
-    flex:1
+    flex:1;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
