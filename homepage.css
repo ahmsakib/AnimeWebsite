@@ -57,7 +57,7 @@ body{
   background-color: grey;
 }
 
-.stocontainer {
+.new-container {
     display: flex;
     justify-content: center;
     align-items: top;
