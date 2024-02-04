@@ -79,9 +79,9 @@
 <!--start OF stories-->
         <div class="container">
         <div class="stories">
-            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(-1)"><i
                     class="fa-solid fa-chevron-left"></i></button>
-            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i
+            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(1)"><i
                     class="fa-solid fa-angle-right"></i></i></button>
 
 
@@ -105,7 +105,7 @@
     <script src="https://kit.fontawesome.com/15a4a55cdf.js" crossorigin="anonymous"></script>
     <script>
    //JS for scroll
-        let currentScrollPosition = 0;
+let currentScrollPosition = 0;
         let scrollAmount = 320;
 
         const sCont = document.querySelector(".story-container");
@@ -138,6 +138,7 @@
 
             sCont.style.left = -currentScrollPosition + "px";
         }
+
 //JS for scroll end
 
 
