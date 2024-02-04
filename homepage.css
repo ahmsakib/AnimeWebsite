@@ -62,7 +62,7 @@ body{
     justify-content: center;
     align-items: top;
     background-color: #f9f9f9;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
    /*container*/ 
   flex-grow: 1;
