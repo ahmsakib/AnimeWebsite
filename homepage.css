@@ -66,6 +66,9 @@ body{
     width: 100%;
    /*container*/ 
   flex-grow: 1;
+  /*Postion*/
+  postion: fixed;
+  top:0;
 }
 
 .stories {
