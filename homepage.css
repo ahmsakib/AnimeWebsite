@@ -64,6 +64,7 @@ body {
     align-items: top;
     background-color: #f9f9f9;
     height: 100vh;
+    width: 100%;
 }
 
 .stories {
@@ -79,7 +80,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-
+    scroll-snap-type: x mandatory;
 
 }
 
@@ -93,6 +94,8 @@ body {
     margin: 0 5px;
     z-index: 1;
     cursor: pointer;
+    scroll-snap-align: start;
+  
 }
 
 
