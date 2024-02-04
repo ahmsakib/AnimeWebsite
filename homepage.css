@@ -1,6 +1,11 @@
 body{
   background-color: black;
   font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*align-items*/  
+  align-items: stretch;
 }
 .side-navbar{
   position: fixed;
@@ -50,14 +55,6 @@ body{
 .top-sidebar:hover,
 .bottom-sidebar:hover{
   background-color: grey;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  /*align-items*/  
-  align-items: stretch;
 }
 
 .container {
