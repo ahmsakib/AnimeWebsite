@@ -61,7 +61,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     background-color: #f9f9f9;
     height: 100vh;
 }
