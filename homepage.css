@@ -6,13 +6,14 @@ body{
   box-sizing: border-box;
   /*align-items*/  
   align-items: stretch;
+  padding-bottom: 10000px;
 }
 .side-navbar{
   position: fixed;
   left: 0px;
   bottom: 0px;
   top: 0;
-  background-color: black;
+  background-color: rgb(156, 98, 98);
   width: 250px;
   z-index: 200;
   padding-top: 5px;
@@ -57,18 +58,15 @@ body{
   background-color: grey;
 }
 
-.new-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: top;
     background-color: #f9f9f9;
-    height: 50vh;
+    height: 15vh;
     width: 100%;
    /*container*/ 
-  flex-grow: 1;
-  /*Postion*/
-  position: fixed;
-  top:0;
+    flex-grow: 1;
 }
 
 .stories {
@@ -85,7 +83,6 @@ body{
     position: relative;
     overflow: hidden;
     scroll-snap-type: x mandatory;
-
 }
 
 .stories .btn-scroll {
@@ -99,7 +96,6 @@ body{
     z-index: 1;
     cursor: pointer;
     scroll-snap-align: start;
-  
 }
 
 
@@ -133,7 +129,66 @@ body{
     transform: rotateZ(-45deg);
 }
 .story-section{
-  position: fixed;
+  position: absolute;
   left: 30%;
   right: 30%;
+}
+
+/*POST-SECTION*/
+.post-section{
+  background-color: aqua;
+  width: 468px;
+  height: auto;
+  position: relative;
+  left: 30%;
+  right: 60%;
+  top: 30%;
+}
+.post-profile{
+  display: grid;
+  grid-template-columns: 50px 250px;
+}
+.post-profile-info{
+  display: grid;
+  grid-template-columns: 392px 60px;
+}
+
+.profile-info-image{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.profile-info-menu{
+  width: 10px;
+}
+
+.post-image{
+  width: 468px;
+  height: 468px;
+  object-fit: cover;
+}
+
+.post-interaction{
+  display: grid;
+  grid-template-columns: 400px 60px;
+}
+.post-caption{
+  display: grid;
+  grid-template-columns: 100px 368px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.post-comment{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.fa-regular{
+  width: 30px;
+  color: white;
+  margin-left: 5px;
+}
+.post-list{
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  gap: 90px;
 }
