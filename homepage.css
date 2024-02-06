@@ -73,7 +73,7 @@ body{
 .stories {
     width: 650px;
     height: 100px;
-    background-color: #fff;
+    background-color: #000000;
     border: 1px #ddd;
     border-radius: 5px;
     display: flex;
