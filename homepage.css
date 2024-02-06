@@ -132,13 +132,13 @@ body{
     transform: rotateZ(-45deg);
 }
 .story-section{
-  position: absolute;
+  
   left: 30%;
   right: 30%;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  margin-top: 20%;
+  
 }
 
 /*POST-SECTION*/
