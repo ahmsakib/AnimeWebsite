@@ -133,7 +133,7 @@ body{
   
   left: 30%;
   right: 30%;
-  position: fixed; /* Set the navbar to fixed position */
+  position: absolute; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
  
   
