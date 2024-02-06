@@ -67,8 +67,6 @@ body{
     width: 100%;
    /*container*/ 
     flex-grow: 1;
-    position: absolute;
-  top: 50%;
 
 }
 
