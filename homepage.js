@@ -64,6 +64,13 @@ document.querySelector('.post-list')
 
   let maxscroll = sCont.offsetWidth - hScroll.offsetWidth;
 
+  btnScrollLeft.addEventListener('click', () => {
+    scrollHorizontally(-1);
+  })
+  btnScrollRight.addEventListener('click', () => {
+    scrollHorizontally(1);
+  })
+
   function scrollHorizontally(val) {
       currentScrollPosition += val * scrollAmount;
 
