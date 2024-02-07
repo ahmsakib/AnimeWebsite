@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></i>Instagram</title>
+    <title>Instagram</title>
 
     <link rel="stylesheet" href="homepage.css">
 </head>
@@ -14,8 +14,9 @@
   <nav class="side-navbar">
     <div class="top-sidebar">
       <a href="index.html" class="icon-container-link">        
-        <img src="images/insta-sidebar-logo.png" alt="Insta-logo" class="sidebar-insta-logo">
-        <div class="icon-name-header">Instagram</div>
+        <div class="icon-name-header">
+          <i data-visualcompletion="css-img" aria-label="Instagram" class="instaLogo" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block; margin-left: -20px;"></i>
+        </div>
       </a>
     </div>
 
@@ -86,18 +87,18 @@
                       class="fa-solid fa-angle-right"></i></i></button>
 
             <div class="story-container">
-                <div class="story-img"><img src="images/1.jpg" alt=""></div>
-                <div class="story-img"><img src="images/2.jpeg" alt=""></div>
-                <div class="story-img"><img src="images/3.jpg" alt=""></div>
-                <div class="story-img"><img src="images/4.png" alt=""></div>
-                <div class="story-img"><img src="images/5.png" alt=""></div>
-                <div class="story-img"><img src="images/6.png" alt=""></div>
-                <div class="story-img"><img src="images/7.jpg" alt=""></div>
-                <div class="story-img"><img src="images/8.png" alt=""></div>
-                <div class="story-img"><img src="images/9.png" alt=""></div>
-                <div class="story-img"><img src="images/10.png" alt=""></div>
-                <div class="story-img"><img src="images/11.JPG" alt=""></div>
-                <div class="story-img"><img src="images/12.JPG" alt=""></div>
+                <div class="story-img"><img src="./Images/1.jpg" alt=""></div>
+                <div class="story-img"><img src="./Images/2.jpeg" alt=""></div>
+                <div class="story-img"><img src="./Images/3.jpg" alt=""></div>
+                <div class="story-img"><img src="./Images/4.png" alt=""></div>
+                <div class="story-img"><img src="./Images/5.png" alt=""></div>
+                <div class="story-img"><img src="./Images/6.png" alt=""></div>
+                <div class="story-img"><img src="./Images/7.jpg" alt=""></div>
+                <div class="story-img"><img src="./Images/8.png" alt=""></div>
+                <div class="story-img"><img src="./Images/9.png" alt=""></div>
+                <div class="story-img"><img src="./Images/10.png" alt=""></div>
+                <div class="story-img"><img src="./Images/11.jpg" alt=""></div>
+                <div class="story-img"><img src="./Images/12.jpg" alt=""></div>
             </div>
         </div>
     </div>
@@ -106,48 +107,8 @@
 <div class="main">
   <div class="post-list"></div>
 </div>
-    <script src="https://kit.fontawesome.com/15a4a55cdf.js" crossorigin="anonymous"></script>
-    <script>
-   //JS for scroll
-   let currentScrollPosition = 0;
-        let scrollAmount = 320;
-
-        const sCont = document.querySelector(".story-container");
-        const hScroll = document.querySelector(".stories");
-        const btnScrollLeft = document.querySelector("#btn-scroll-left");
-        const btnScrollRight = document.querySelector("#btn-scroll-right");
-
-        btnScrollLeft.style.opacity = "0";
-
-
-        let maxscroll = sCont.offsetWidth - hScroll.offsetWidth;
-
-        function scrollHorizontally(val) {
-            currentScrollPosition += val * scrollAmount;
-
-            if (currentScrollPosition < 0) {
-                currentScrollPosition = 0;
-                btnScrollLeft.style.opacity = "0";
-            }
-            else {
-                btnScrollLeft.style.opacity = "1";
-            }
-            if (currentScrollPosition > maxscroll) {
-                currentScrollPosition = maxscroll;
-                btnScrollRight.style.opacity = "0";
-            }
-            else {
-                btnScrollRight.style.opacity = "1";
-            }
-
-            sCont.style.left = -currentScrollPosition + "px";
-        }
-//JS for scroll end
-
-
-
-    </script>
-<!--end OF stories-->
+  
+<script src="https://kit.fontawesome.com/15a4a55cdf.js" crossorigin="anonymous"></script>
 <script type="module" src="homepage.js"></script>
 </body>
 </html>
