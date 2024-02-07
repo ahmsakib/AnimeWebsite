@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+    <main>
+        <img src="Images/phones.png" alt="" class="phoneIMG">
+        <div class="form-div">
+            <form>
+                <i data-visualcompletion="css-img" aria-label="Instagram" class="instaLogo" role="img"
+                    style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+
+                <input type="text" class="input" placeholder="phone number, username or email" required>
+                <input type="text" class="input" placeholder="password" required>
+                <button class="login-btn">Log In</button>
+                <p id="or">or</p>
+                <a href="#" class="fb-login"><i class="fa-brands fa-square-facebook"></i> Log in with Facebook</a>
+            </form>
+            <div class="sign-up">
+                <p class="signInLink">Don't have an account? <a href="#" class="signInLink">Sign Up</a></p>
+            </div>
+
+            <script src="https://kit.fontawesome.com/15a4a55cdf.js" crossorigin="anonymous"></script>
+            <div class="get-app">
+                <p>Get the app.</p>
+                <div class="store">
+                    <img src="/Images/playstore.png" alt="" id="play">
+                    <img src="/Images/microsoft.png" alt="" id="microsoft">
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                let image = document.getElementById('image');
+                let images = ["Images/s1.png", "Images/s2.png", "Images/s3.png"]
+                setInterval(function () {
+                    let random = Math.floor(Math.random() * images.length);
+                    image.src = images[random];
+                }, 800)
+
+            </script>
+</body>
+
+
+</div>
+</main>
+
+
+
+</html>
