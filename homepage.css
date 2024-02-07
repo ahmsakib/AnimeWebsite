@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 body{
   background-color: black;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /*align-items*/  
   align-items: stretch;
   padding-bottom: 10000px;
+  color: white;
 }
 .side-navbar{
   position: fixed;
   left: 0px;
   bottom: 0px;
   top: 0;
-  background-color: rgb(156, 98, 98);
+  background-color: black;
   width: 250px;
   z-index: 200;
   padding-top: 5px;
+  border-right: grey;
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
 .sidebar-insta-logo{
@@ -62,18 +67,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: top;
-    background-color: #000000;
+    background-color: black;
     height: 15vh;
     width: 100%;
    /*container*/ 
     flex-grow: 1;
-
 }
 
 .stories {
     width: 650px;
     height: 100px;
-    background-color: #000000;
+    background-color: black;
     border: 1px #ddd;
     border-radius: 5px;
     display: flex;
@@ -126,42 +130,38 @@ body{
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid black;
     transform: rotateZ(-45deg);
 }
 .story-section{
-  
+  position: absolute;
   left: 30%;
   right: 30%;
-  position: absolute; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
- 
-  
 }
 
 /*POST-SECTION*/
 .post-section{
-  background-color: aqua;
+  background-color: black;
   width: 468px;
   height: auto;
-  position: relative;
-  left: 30%;
-  right: 60%;
-  top: 30%;
 }
 .post-profile{
   display: grid;
   grid-template-columns: 50px 250px;
+  margin-bottom: 8px;
 }
 .post-profile-info{
   display: grid;
   grid-template-columns: 392px 60px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .profile-info-image{
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50px;
 }
 .profile-info-menu{
   width: 10px;
@@ -171,21 +171,33 @@ body{
   width: 468px;
   height: 468px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .post-interaction{
   display: grid;
-  grid-template-columns: 400px 60px;
+  grid-template-columns: 440px 20px;
+  margin-top: 10px;
 }
-.post-caption{
-  display: grid;
-  grid-template-columns: 100px 368px;
-  margin-top: 8px;
+.post-likes{
+  margin-top: 14px;
   margin-bottom: 8px;
 }
-.post-comment{
-  margin-top: 6px;
+.post-caption{
+  display: flex;
+  gap: 5px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-wrap: wrap;
+}
+.caption-profile{
+  font-weight: bold;
+}
+.post-comment,
+.add-comment{
+  margin-top: 2px;
   margin-bottom: 6px;
+  color: grey;
 }
 .fa-regular{
   width: 30px;
@@ -194,6 +206,9 @@ body{
 }
 .post-list{
   display: grid;
-  grid-template-rows: repeat(1fr);
-  gap: 90px;
+  gap: 50px;
+  position: absolute;
+  left: 36%;
+  right: 60%;
+  top: 30%;
 }
