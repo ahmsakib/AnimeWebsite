@@ -12,9 +12,7 @@ post.forEach((post) => {
     <div class="post-profile-info">
       <div class="profile-name">${post.name} &#183; ${post.hour}hr</div>
       <div>
-        <button>
-          <img src="images/dots.png" class="profile-info-menu">
-        </button>
+          <i class="fa-solid fa-ellipsis fa-lg" style="color: #ffffff;"></i>
       </div>
     </div>
   </div>
@@ -23,16 +21,16 @@ post.forEach((post) => {
   </div>
   <div class="post-interaction">
     <div>
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-regular fa-comment"></i>
-      <i class="fa-regular fa-paper-plane"></i>
+      <i class="fa-regular fa-heart fa-xl" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-comment fa-xl" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-paper-plane fa-xl" style="color: #ffffff;"></i>
     </div>
     <div>
-      <i class="fa-regular fa-bookmark"></i>
+      <i class="fa-regular fa-bookmark fa-xl" style="color: #ffffff;"></i>
     </div>
   </div>
-  <div class="post-likes">
-    <p>${post.likes} likes</p>
+  <div>
+    <p class="post-likes">${post.likes} likes</p>
   </div>
   <div class="post-caption">
     <div class="caption-profile">${post.name}</div>
@@ -42,7 +40,7 @@ post.forEach((post) => {
     View all ${post.comments} Comments
   </div>
   <div class="add-comment">
-    Add a comment
+    Add a comment...
   </div>
 </div>
 `;
@@ -50,3 +48,39 @@ post.forEach((post) => {
 
 document.querySelector('.post-list')
   .innerHTML = postHTML;
+
+
+  //JS SCROLL
+  let currentScrollPosition = 0;
+  let scrollAmount = 320;
+
+  const sCont = document.querySelector(".story-container");
+  const hScroll = document.querySelector(".stories");
+  const btnScrollLeft = document.querySelector("#btn-scroll-left");
+  const btnScrollRight = document.querySelector("#btn-scroll-right");
+
+  btnScrollLeft.style.opacity = "0";
+
+
+  let maxscroll = sCont.offsetWidth - hScroll.offsetWidth;
+
+  function scrollHorizontally(val) {
+      currentScrollPosition += val * scrollAmount;
+
+      if (currentScrollPosition < 0) {
+          currentScrollPosition = 0;
+          btnScrollLeft.style.opacity = "0";
+      }
+      else {
+          btnScrollLeft.style.opacity = "1";
+      }
+      if (currentScrollPosition > maxscroll) {
+          currentScrollPosition = maxscroll;
+          btnScrollRight.style.opacity = "0";
+      }
+      else {
+          btnScrollRight.style.opacity = "1";
+      }
+
+      sCont.style.left = -currentScrollPosition + "px";
+  }
