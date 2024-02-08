@@ -137,6 +137,7 @@ body{
   position: absolute;
   left: 30%;
   right: 30%;
+  display:flex;
 }
 
 /*POST-SECTION*/
