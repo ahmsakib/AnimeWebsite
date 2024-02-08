@@ -75,12 +75,13 @@ main {
 
 #play {
     width: 168px;
-
+    display: flex;
 }
 
 #microsoft {
     width: 135px;
     padding-top: 10px;
+    display: flex;
 }
 
 .fb-login {
@@ -105,4 +106,5 @@ main {
     align-items: center;
     text-align: center;
     padding: 5px;
+    display: flex;
 }
