@@ -10,8 +10,14 @@ body{
   padding-bottom: 10000px;
   color: white;
 }
+.insta-logo{
+  width: 120px;
+  margin-left: -10px;
+}
 .side-navbar{
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left: 0px;
   bottom: 0px;
   top: 0;
@@ -19,8 +25,8 @@ body{
   width: 250px;
   z-index: 200;
   padding-top: 5px;
-  border-right: grey;
-  border-right-width: 2px;
+  border-right: rgb(35, 35, 35);
+  border-right-width: 0.2px;
   border-right-style: solid;
 }
 
@@ -35,15 +41,17 @@ body{
   align-items: center;
   flex-direction: row;
   cursor: pointer;
-  height: 60px;
-  padding-left: 50px;
+  height: 48px;
+  padding-left: 15px;
   transition: background-color 0.2s;
+  margin: 15px 15px -5px 8px;
+  border-radius: 10px;
 }
 .top-sidebar{
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .bottom-sidebar{
-  margin-top: 180px;
+  margin-top: 250px;
 }
 .icon-names,
 .icon-name-header{
